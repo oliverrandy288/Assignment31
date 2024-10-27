@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Web Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            padding: 1em 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff6347; /* Change color on hover */
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .gallery img:hover {
+            border: 2px solid #ff6347; /* Change border color on hover */
+        }
+
+        /* CTA Button Styles */
+        .cta-button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4500; /* Change background color on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form Styles */
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #0056b3; /* Change button color on hover */
+        }
+
+        /* Table Styles */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Alternating row color */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#cta">Call to Action</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#registration">Register</a></li>
+            <li><a href="#data-table">Data Table</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Gallery -->
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Movie Poster 1">
+            <img src="image2.jpg" alt="Album Cover 1">
+            <img src="image3.jpg" alt="Game Screenshot 1">
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <h2>Call to Action</h2>
+        <button class="cta-button">Watch Now</button>
+        <button class="cta-button">Listen Here</button>
+        <button class="cta-button">Play Game</button>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+        <h2>User Feedback</h2>
+        <form>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" rows="4" required></textarea>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" min="1" max="5" required>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- User Registration Form -->
+    <section id="registration">
+        <h2>User Registration</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Data Table -->
+    <section id="data-table">
+        <h2>Entertainment Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Release Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Movie 1</td>
+                    <td>Film</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Album 1</td>
+                    <td>Music</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Game 1</td>
+                    <td>Video Game</td>
+                    <td>2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
